@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://bm2fap5gii643"
+path="res://.godot/imported/rainbowlaser.ogg-eff3b34911b1c5606ca022df9c04ac71.oggvorbisstr"
+
+[deps]
+
+source_file="res://Assets/ZipAssets/Legacy Collection/Assets/Packs/Sewers pack files/Sounds/rainbowlaser.ogg"
+dest_files=["res://.godot/imported/rainbowlaser.ogg-eff3b34911b1c5606ca022df9c04ac71.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

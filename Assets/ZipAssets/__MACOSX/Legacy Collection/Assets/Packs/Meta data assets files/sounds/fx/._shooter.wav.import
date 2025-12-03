@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cnpxu7sp45s0e"
+path="res://.godot/imported/._shooter.wav-9a8248ef071e4e66c18824dbf70e7ca7.sample"
+
+[deps]
+
+source_file="res://Assets/ZipAssets/__MACOSX/Legacy Collection/Assets/Packs/Meta data assets files/sounds/fx/._shooter.wav"
+dest_files=["res://.godot/imported/._shooter.wav-9a8248ef071e4e66c18824dbf70e7ca7.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

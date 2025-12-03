@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ba264p4igtflq"
+path="res://.godot/imported/._shot.wav-4c25eadb0ce2bb60e4a86ac9330b7c67.sample"
+
+[deps]
+
+source_file="res://Assets/ZipAssets/__MACOSX/Legacy Collection/Assets/Packs/Sewers pack files/Sounds/._shot.wav"
+dest_files=["res://.godot/imported/._shot.wav-4c25eadb0ce2bb60e4a86ac9330b7c67.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

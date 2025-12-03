@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b0nu7q0lxk510"
+path="res://.godot/imported/._enemy-death.wav-caf2471785c13d3616762f423a3a073d.sample"
+
+[deps]
+
+source_file="res://Assets/ZipAssets/__MACOSX/Legacy Collection/Assets/Packs/Sewers pack files/Sounds/._enemy-death.wav"
+dest_files=["res://.godot/imported/._enemy-death.wav-caf2471785c13d3616762f423a3a073d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
