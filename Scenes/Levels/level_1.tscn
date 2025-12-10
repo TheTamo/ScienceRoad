@@ -6,4 +6,4 @@
 position = Vector2(-39, 0)
 
 [node name="Player" parent="." instance=ExtResource("1_tlcug")]
-position = Vector2(127, 182)
+position = Vector2(128, 181)
