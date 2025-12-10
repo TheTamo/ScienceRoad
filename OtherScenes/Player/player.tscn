@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cf2bsk8kx0mnx"]
+[gd_scene load_steps=18 format=3 uid="uid://cf2bsk8kx0mnx"]
 
 [ext_resource type="Texture2D" uid="uid://3acu5hfu86rq" path="res://Assets/UsingAssets/SpriteSheets/Player_Sword.png" id="1_mqy7t"]
 [ext_resource type="Texture2D" uid="uid://d2wkihdx5mgl4" path="res://Assets/UsingAssets/SpriteSheets/Player_Normal.png" id="2_2b8sk"]
@@ -203,15 +203,161 @@ tracks/1/keys = {
 "values": [45, 46, 47, 48]
 }
 
+[sub_resource type="Animation" id="Animation_f2rel"]
+resource_name = "Walk_sword"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.10269565, 0.22482021, 0.36666667, 0.53333336, 0.6666667, 0.8333333, 0.96666664, 1.1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [9, 10, 11, 12, 13, 14, 15, 16, 17]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mqy7t")]
+}
+
+[sub_resource type="Animation" id="Animation_81kx5"]
+resource_name = "Jump_Sword"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.19999999),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [27, 28]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mqy7t")]
+}
+
+[sub_resource type="Animation" id="Animation_haxtm"]
+resource_name = "Idle_Sword"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6333333, 0.8333333),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mqy7t")]
+}
+
+[sub_resource type="Animation" id="Animation_2tfab"]
+resource_name = "Fall_Sword"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [36]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mqy7t")]
+}
+
+[sub_resource type="Animation" id="Animation_qiwsl"]
+resource_name = "Dead_Sword"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mqy7t")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.33333334, 0.5, 0.6333333, 0.76666665),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [90, 91, 92, 93, 94, 95]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t54wg"]
 _data = {
 &"Dead": SubResource("Animation_hsgqj"),
+&"Dead_Sword": SubResource("Animation_qiwsl"),
 &"Fall": SubResource("Animation_ugeek"),
+&"Fall_Sword": SubResource("Animation_2tfab"),
 &"Idle": SubResource("Animation_2b8sk"),
+&"Idle_Sword": SubResource("Animation_haxtm"),
 &"Jump": SubResource("Animation_n1wxv"),
+&"Jump_Sword": SubResource("Animation_81kx5"),
 &"RESET": SubResource("Animation_uha7h"),
 &"Sword": SubResource("Animation_t54wg"),
-&"Walk": SubResource("Animation_n7mm4")
+&"Walk": SubResource("Animation_n7mm4"),
+&"Walk_sword": SubResource("Animation_f2rel")
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mqy7t"]
