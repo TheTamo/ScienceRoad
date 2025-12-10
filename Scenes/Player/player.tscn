@@ -384,8 +384,9 @@ libraries = {
 autoplay = "Idle"
 
 [node name="Sword" type="Area2D" parent="."]
+position = Vector2(19, -5)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sword"]
-position = Vector2(28, -6)
+position = Vector2(-1, -5)
 shape = SubResource("RectangleShape2D_mqy7t")
 debug_color = Color(0.89869046, 0.00018097162, 0.7697709, 0.41960785)
