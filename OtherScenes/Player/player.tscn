@@ -1,6 +1,6 @@
-[gd_scene load_steps=11 format=3 uid="uid://cf2bsk8kx0mnx"]
+[gd_scene load_steps=12 format=3 uid="uid://cf2bsk8kx0mnx"]
 
-[ext_resource type="Texture2D" uid="uid://d2wkihdx5mgl4" path="res://Assets/UsingAssets/SpriteSheets/Player_Normal.png" id="1_mqy7t"]
+[ext_resource type="Texture2D" uid="uid://3acu5hfu86rq" path="res://Assets/UsingAssets/SpriteSheets/Player_Sword.png" id="1_mqy7t"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ooqsh"]
 radius = 9.0
@@ -57,6 +57,19 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_ugeek"]
 resource_name = "Fall"
+length = 0.2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [36]
+}
 
 [sub_resource type="Animation" id="Animation_hsgqj"]
 resource_name = "Dead"
@@ -75,6 +88,46 @@ tracks/0/keys = {
 "update": 1,
 "values": [1]
 }
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mqy7t")]
+}
+
+[sub_resource type="Animation" id="Animation_t54wg"]
+resource_name = "Sword"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_mqy7t")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.36666667, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [45, 46, 47, 48]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_t54wg"]
 _data = {
@@ -83,6 +136,7 @@ _data = {
 &"Idle": SubResource("Animation_2b8sk"),
 &"Jump": SubResource("Animation_n1wxv"),
 &"RESET": SubResource("Animation_uha7h"),
+&"Sword": SubResource("Animation_t54wg"),
 &"Walk": SubResource("Animation_n7mm4")
 }
 
