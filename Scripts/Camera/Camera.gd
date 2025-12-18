@@ -1,20 +1,20 @@
 extends Camera2D
 
-
-
 @onready var player = $"../Player"
-# Called when the node enters the scene tree for the first time.
+
+@export var follow_speed_x := 6.0
+@export var follow_speed_y := 3.0
+@export var y_offset := 60.0
+
 func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	camera_follow()
-	
-	
-func camera_follow():
 	anchor_mode = Camera2D.ANCHOR_MODE_DRAG_CENTER
-	position.x = player.position.x
-	position.y = player.position.y - 60
-	
+
+func _process(delta):
+	camera_follow(delta)
+
+func camera_follow(delta):
+	var target_x = player.global_position.x
+	var target_y = player.global_position.y - y_offset
+
+	global_position.x = lerp(global_position.x, target_x, follow_speed_x * delta)
+	global_position.y = lerp(global_position.y, target_y, follow_speed_y * delta)

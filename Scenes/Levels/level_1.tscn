@@ -93,17 +93,17 @@ sources/0 = SubResource("TileSetAtlasSource_3mqfk")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 z_index = -5
-scale = Vector2(2.06, 2.06)
+scale = Vector2(3.085, 3.085)
 texture = ExtResource("1_cyadu")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 z_index = -2
-scale = Vector2(2.06, 2.06)
+scale = Vector2(3.085, 3.085)
 texture = ExtResource("2_xgxfi")
 
 [node name="Sprite2D3" type="Sprite2D" parent="."]
 z_index = -2
-scale = Vector2(2.06, 2.06)
+scale = Vector2(3.085, 3.085)
 texture = ExtResource("3_5f3p6")
 
 [node name="Player" parent="." instance=ExtResource("1_tlcug")]
