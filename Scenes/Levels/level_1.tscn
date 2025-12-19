@@ -5,14 +5,14 @@
 [ext_resource type="PackedScene" uid="uid://cf2bsk8kx0mnx" path="res://Scenes/Player/player.tscn" id="1_tlcug"]
 [ext_resource type="Texture2D" uid="uid://bddab72wx315q" path="res://Assets/UsingAssets/TileSets/Jungle/background/background_2.png" id="2_xgxfi"]
 [ext_resource type="Texture2D" uid="uid://bkiearntp1aa8" path="res://Assets/UsingAssets/TileSets/Jungle/background/background_3.png" id="3_5f3p6"]
-[ext_resource type="Script" uid="uid://d1e03u4fb1guo" path="res://Scripts/Camera/Camera.gd" id="5_xgxfi"]
+[ext_resource type="Script" uid="uid://d1e03u4fb1guo" path="res://Scripts/Camera/Camera.gd" id="6_xgxfi"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_3mqfk"]
 texture = ExtResource("1_4dpyx")
 0:0/0 = 0
 0:0/0/terrain_set = 0
 0:0/0/terrain = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.0489473, 0, 8, 0, 8, 8, -6.877022, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.10152531, 8, 0.20305061, 8, 8, -8, 8)
 0:0/0/terrains_peering_bit/right_side = 0
 0:0/0/terrains_peering_bit/bottom_right_corner = 0
 0:0/0/terrains_peering_bit/bottom_side = 0
@@ -21,7 +21,7 @@ texture = ExtResource("1_4dpyx")
 1:0/0 = 0
 1:0/0/terrain_set = 0
 1:0/0/terrain = 0
-1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -0.028654099, 7.030198, 0.0091302395, 6.93433, 8, -8, 8)
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, 0.10152531, 8, 0.20305061, 8, 8, -8, 8)
 1:0/0/terrains_peering_bit/right_side = 0
 1:0/0/terrains_peering_bit/bottom_right_corner = 0
 1:0/0/terrains_peering_bit/bottom_side = 0
@@ -109,15 +109,14 @@ position = Vector2(-1, 0)
 scale = Vector2(3.085, 3.085)
 texture = ExtResource("3_5f3p6")
 
-[node name="Player" parent="." instance=ExtResource("1_tlcug")]
-position = Vector2(-52, -32)
-
-[node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2.5, 2.5)
-script = ExtResource("5_xgxfi")
-
 [node name="TileMap" type="TileMap" parent="."]
 position = Vector2(-2, 0)
 tile_set = SubResource("TileSet_iixi8")
 format = 2
 layer_0/tile_data = PackedInt32Array(393201, 0, 0, 458737, 0, 1, 524273, 0, 2, 393202, 65536, 0, 458738, 65536, 1, 524274, 65536, 2, 393203, 0, 0, 458739, 0, 1, 524275, 0, 2, 393204, 65536, 0, 458740, 65536, 1, 524276, 65536, 2, 393205, 0, 0, 458741, 0, 1, 524277, 0, 2, 393206, 65536, 0, 458742, 65536, 1, 524278, 65536, 2, 393207, 0, 0, 458743, 0, 1, 524279, 0, 2, 393208, 65536, 0, 458744, 65536, 1, 524280, 65536, 2, 393209, 0, 0, 458745, 0, 1, 524281, 0, 2, 393210, 65536, 0, 458746, 65536, 1, 524282, 65536, 2, 393211, 0, 0, 458747, 0, 1, 524283, 0, 2, 393212, 65536, 0, 458748, 65536, 1, 524284, 65536, 2, 393213, 0, 0, 458749, 0, 1, 524285, 0, 2, 393214, 65536, 0, 458750, 65536, 1, 524286, 65536, 2, 393215, 0, 0, 458751, 0, 1, 524287, 0, 2, 327680, 65536, 0, 393216, 65536, 1, 458752, 65536, 2, 327681, 0, 0, 393217, 0, 1, 458753, 0, 2, 327682, 65536, 0, 393218, 65536, 1, 458754, 65536, 2, 327683, 0, 0, 393219, 0, 1, 458755, 0, 2, 327684, 65536, 0, 393220, 65536, 1, 458756, 65536, 2, 327685, 0, 0, 393221, 0, 1, 458757, 0, 2, 327686, 65536, 0, 393222, 65536, 1, 458758, 65536, 2, 327687, 0, 0, 393223, 0, 1, 458759, 0, 2, 327688, 65536, 0, 393224, 65536, 1, 458760, 65536, 2, 327689, 0, 0, 393225, 0, 1, 458761, 0, 2, 327690, 65536, 0, 393226, 65536, 1, 458762, 65536, 2, 327691, 0, 0, 393227, 0, 1, 458763, 0, 2, 327692, 65536, 0, 393228, 65536, 1, 458764, 65536, 2, 327693, 0, 0, 393229, 0, 1, 458765, 0, 2, 327694, 65536, 0, 393230, 65536, 1, 458766, 65536, 2)
+
+[node name="Player" parent="." instance=ExtResource("1_tlcug")]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.395, 2.395)
+script = ExtResource("6_xgxfi")
