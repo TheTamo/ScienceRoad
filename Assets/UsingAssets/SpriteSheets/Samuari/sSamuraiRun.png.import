@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2wkihdx5mgl4"
-path="res://.godot/imported/Player_Normal.png-b464a64a63c9714ac0f6056423d1fbb7.ctex"
+uid="uid://difmj1uvvs12v"
+path="res://.godot/imported/sSamuraiRun.png-e1752ea3af73a2ac4c953784f8476604.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/UsingAssets/SpriteSheets/Player_Normal.png"
-dest_files=["res://.godot/imported/Player_Normal.png-b464a64a63c9714ac0f6056423d1fbb7.ctex"]
+source_file="res://Assets/UsingAssets/SpriteSheets/Samuari/sSamuraiRun.png"
+dest_files=["res://.godot/imported/sSamuraiRun.png-e1752ea3af73a2ac4c953784f8476604.ctex"]
 
 [params]
 
