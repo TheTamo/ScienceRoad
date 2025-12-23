@@ -4,7 +4,7 @@ extends Camera2D
 
 @export var follow_speed_x := 6.0
 @export var follow_speed_y := 3.0
-@export var y_offset := 150.0
+@export var y_offset := 50.0
 
 func _ready() -> void:
 	anchor_mode = Camera2D.ANCHOR_MODE_DRAG_CENTER
