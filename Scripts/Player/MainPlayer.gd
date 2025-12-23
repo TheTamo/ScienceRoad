@@ -54,6 +54,7 @@ func movement(delta):
 		if input > 0:
 			velocity.x = speed
 			$Sprite2D.scale.x = 1
+			
 
 			if Input.is_action_pressed("IG_Run"):
 				$anim.play("Run",-1,1.5)
