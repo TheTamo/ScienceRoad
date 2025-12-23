@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cbudndvf7qk6s"
-path="res://.godot/imported/old-dark-castle-interior-background.png-0d27bc5c6d4ba1df8ba3f359677317ce.ctex"
+path="res://.godot/imported/old-dark-castle-interior-background.png-481c0676b453cfcb65c9f59786856a28.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ZipAssets/Legacy Collection/Assets/Environments/Old-dark-Castle-tileset-Files/PNG/old-dark-castle-interior-background.png"
-dest_files=["res://.godot/imported/old-dark-castle-interior-background.png-0d27bc5c6d4ba1df8ba3f359677317ce.ctex"]
+source_file="res://Assets/UsingAssets/TileSets/Prison/old-dark-castle-interior-background.png"
+dest_files=["res://.godot/imported/old-dark-castle-interior-background.png-481c0676b453cfcb65c9f59786856a28.ctex"]
 
 [params]
 
